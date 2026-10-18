@@ -1,0 +1,41 @@
+@import "tailwindcss";
+
+:root {
+  --beelee-teal: #277B77;
+  --honey-gold: #F7B70D;
+  --earth-brown: #3A2C13;
+  --warm-amber: #B4672A;
+  --soft-teal: #E8F5F4;
+  --cream-gold: #FEF7E0;
+  --light-gray: #F5F5F5;
+  --danger: #DC2626;
+  --success: #16A34A;
+}
+
+@theme inline {
+  --color-beelee-teal: var(--beelee-teal);
+  --color-honey-gold: var(--honey-gold);
+  --color-earth-brown: var(--earth-brown);
+  --color-warm-amber: var(--warm-amber);
+  --color-soft-teal: var(--soft-teal);
+  --color-cream-gold: var(--cream-gold);
+  --color-light-gray: var(--light-gray);
+  --color-danger: var(--danger);
+  --color-success: var(--success);
+  --font-sans: var(--font-nunito);
+}
+
+html {
+  color-scheme: light;
+}
+
+body {
+  background: var(--light-gray);
+  color: var(--earth-brown);
+  font-family: var(--font-nunito), Arial, Helvetica, sans-serif;
+}
+
+*:focus-visible {
+  outline: 2px solid var(--honey-gold);
+  outline-offset: 2px;
+}
